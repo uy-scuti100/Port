@@ -10,7 +10,7 @@ const Blog = () => {
     // Simulate loading for 2 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 900);
   }, []);
 
   return (

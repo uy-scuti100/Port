@@ -19,7 +19,7 @@ const Home = () => {
     // Simulate loading for 2 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1000);
   }, []);
   return (
     <div className="transition-all duration-500 ease-in-out">

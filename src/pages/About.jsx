@@ -2,6 +2,11 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/theme";
 import MobileNav from "../components/MobileNav";
 import { RingLoader } from "react-spinners";
+import Topbar from "../components/Topbar";
+import MobileTopBar from "../components/MobileTopBar";
+import Toggle from "../components/Toggle";
+import Profile from "../components/Profile";
+import Footer from "../components/Footer";
 
 const About = () => {
   const { theme, isDarkMode } = useContext(ThemeContext);
@@ -10,7 +15,7 @@ const About = () => {
     // Simulate loading for 2 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 900);
   }, []);
 
   return (
@@ -27,7 +32,12 @@ const About = () => {
         <div className={`bg-${theme.bg} min-h-screen relative overflow-hidden`}>
           {" "}
           Blog
+          <Topbar />
+          <MobileTopBar />
+          <Profile />
           <MobileNav />
+          <Toggle />
+          <Footer />
         </div>
       )}
     </div>

@@ -2,14 +2,14 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/theme";
 import { Link } from "react-router-dom";
 import { ImInstagram } from "react-icons/im";
-import { FaPinterestP, FaTwitter } from "react-icons/fa";
-import { GrDribbble } from "react-icons/gr";
+import { FaTwitter } from "react-icons/fa";
+import { FiGithub } from "react-icons/fi";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 const Footer = () => {
   const { isDarkMode, theme } = useContext(ThemeContext);
   return (
-    <div className="md:py-20 py-10 flex gap-5 flex-col justify-center items-center z-10">
+    <div className="md:py-20 pt-10 pb-20 flex gap-5 flex-col justify-center items-center z-10">
       <div>
         <svg
           width="70px"
@@ -64,25 +64,33 @@ const Footer = () => {
 
       <div className=" mt-10 w-[100px] h-[1px] bg-brown"></div>
       <div
-        className={`mt-10 flex items-center text-[24px] space-x-4
+        className={` md:before:w-[150px] before:w-[80px] before:h-[2px] before:bg-brown
+        before:mr-6 md:after:w-[150px] after:w-[80px] after:h-[2px] after:bg-brown
+        after:ml-6 mt-10 flex items-center text-[24px] space-x-4
         md:space-x-8 ${
           isDarkMode ? "text-ash" : "text-gray"
         }  px-[20px] md:text-[36px] py-5`}
       >
         <p>
-          <ImInstagram />
+          <Link to="https://www.instagram.com/_uy_scuti____/">
+            <ImInstagram />
+          </Link>
         </p>
         <p>
-          <FaTwitter />
+          <Link to="https://twitter.com/Hussain_Joe">
+            <FaTwitter />
+          </Link>
         </p>
         <p>
-          <FaPinterestP />
+          <Link to="https://github.com/uy-scuti100">
+            <FiGithub />
+          </Link>
         </p>
+
         <p>
-          <GrDribbble />
-        </p>
-        <p>
-          <TiSocialLinkedin />
+          <Link to="https://www.linkedin.com/in/yusuf-hussain-276ab6251/">
+            <TiSocialLinkedin />
+          </Link>
         </p>
       </div>
     </div>

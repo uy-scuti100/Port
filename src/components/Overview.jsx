@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/theme";
-import { works } from "../utils/works";
 import { Link } from "react-router-dom";
 
 const Overview = () => {

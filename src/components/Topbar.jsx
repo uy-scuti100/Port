@@ -1,4 +1,4 @@
-import { BsToggleOn, BsToggleOff } from "react-icons/bs";
+import { BsToggleOn } from "react-icons/bs";
 import { ThemeContext } from "../../context/theme";
 import { useContext } from "react";
 import { motion } from "framer-motion";
@@ -27,26 +27,26 @@ const Topbar = () => {
         className={`flex items-center text-[18px] font-bold text-${theme.text} font-[roboto] 
       `}
       >
-        <Link index>
+        <Link to="/">
           {" "}
-          <p className="px-5">Home</p>
+          <p className="px-5 hover:text-brown">Home</p>
         </Link>
-        <Link to="work">
-          <p className="px-5">Work</p>
+        <Link to="/work">
+          <p className="px-5 hover:text-brown">Work</p>
         </Link>
-        <Link to="about">
-          <p className="px-5">About</p>
+        <Link to="/about">
+          <p className="px-5 hover:text-brown">About</p>
         </Link>
-        <Link to="contact">
-          <p className="px-5">Contact</p>
+        <Link to="/contact">
+          <p className="px-5 hover:text-brown">Contact</p>
         </Link>
-        <p className="px-5" onClick={toggleTheme}>
+        <div className="text-white mr-3" onClick={toggleTheme}>
           {isDarkMode ? (
-            <BsToggleOff size={36} style={{ color: "#fff" }} />
+            <BsToggleOn size={36} style={{ color: "#fff", rotate: "180deg" }} />
           ) : (
             <BsToggleOn size={36} style={{ color: "#000" }} />
           )}
-        </p>
+        </div>
       </div>
     </motion.div>
   );

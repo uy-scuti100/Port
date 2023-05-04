@@ -4,7 +4,6 @@
 
 * {
   font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
-
 }
 
 .proj-title {
@@ -24,11 +23,20 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
+}
+/* works pages css */
+.work-header {
+  font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
+}
+.work-title {
+  font-size: calc(29px + 17 * ((100vw - 320px) / 1360));
+}
+.about-title {
+  font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
+  line-height: 1;
 }
 
 .word {
-  text-shadow: -20px 10px 10px rgb(0 0 0 / 30%), 0 20px 50px rgb(0 0 0 / 30%);
   font-weight: 900;
   font-size: 10vw;
   transform: matrix(1, 0, 0, 1, 0, 0);
@@ -36,6 +44,13 @@ html {
   will-change: text-shadow, transform;
 }
 
+.lightshadow {
+  text-shadow: -20px 10px 10px rgb(0 0 0 / 30%), 0 20px 50px rgb(0 0 0 / 30%);
+}
+.darkshadow {
+  text-shadow: -20px 10px 10px rgb(225 225 225 /10%),
+    0 20px 50px rgb(225 225 225 /10%);
+}
 .about {
   font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
 }

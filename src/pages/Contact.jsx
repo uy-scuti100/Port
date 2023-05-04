@@ -2,6 +2,10 @@ import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/theme";
 import MobileNav from "../components/MobileNav";
 import { HashLoader } from "react-spinners";
+import Topbar from "../components/Topbar";
+import MobileTopBar from "../components/MobileTopBar";
+import Toggle from "../components/Toggle";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const { theme, isDarkMode } = useContext(ThemeContext);
@@ -10,7 +14,7 @@ const Contact = () => {
     // Simulate loading for 2 seconds
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 900);
   }, []);
 
   return (
@@ -26,8 +30,11 @@ const Contact = () => {
       ) : (
         <div className={`bg-${theme.bg} min-h-screen relative overflow-hidden`}>
           {" "}
-          Blog
+          <Topbar />
+          <MobileTopBar />
           <MobileNav />
+          <Toggle />
+          <Footer />
         </div>
       )}
     </div>
