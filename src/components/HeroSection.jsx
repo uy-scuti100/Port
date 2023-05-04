@@ -3,7 +3,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaPinterestP } from "react-icons/fa";
 import { GrDribbble } from "react-icons/gr";
 import { TiSocialLinkedin } from "react-icons/ti";
-import { ThemeContext } from "../context/theme";
+import { ThemeContext } from "../../context/theme";
 import { useContext } from "react";
 
 const HeroSection = () => {
@@ -11,23 +11,24 @@ const HeroSection = () => {
   return (
     <div className="max-w-[1680px]">
       {/* {" animation"} */}
-      <div className={`py-[30px] px-[20px] md:px-[100px] md:py-[50px]`}>
-        {" "}
+      <div
+        className={`text-${theme.text} py-[30px] px-[20px] md:px-[100px] md:py-[50px]`}
+      >
         <div className="div">
-          <h1 className={`text-${theme.text} word num`}>music.code.</h1>
-          <p className="overlay-1"></p>
+          <h1 className="word num">Design. Code.</h1>
+          <p className={`bg-${theme.load} overlay-1`}></p>
         </div>
         <div className="div">
-          <h1 className={`text-${theme.text} word num`}>design. Art.</h1>
-          <p className="overlay-2"></p>
+          <h1 className="word num">Music. Art.</h1>
+          <p className={`bg-${theme.load} overlay-2`}></p>
         </div>
         <div className="div">
-          <h1 className={`text-${theme.text} word num`}>Fitness. Movies</h1>
-          <p className="overlay-3"></p>
+          <h1 className="word num">Adventures.</h1>
+          <p className={`bg-${theme.load} overlay-3`}></p>
         </div>
         <div className="div">
-          <h1 className={`text-${theme.text} word num`}>Travel. Yoga</h1>
-          <p className="overlay-2"></p>
+          <h1 className="word num">Documentaries.</h1>
+          <p className={`bg-${theme.load} overlay-2`}></p>
         </div>
       </div>
       <div

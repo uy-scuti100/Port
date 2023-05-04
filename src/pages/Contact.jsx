@@ -1,11 +1,11 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { ThemeContext } from "../../context/theme";
 import MobileNav from "../components/MobileNav";
-import { BounceLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 
-const Work = () => {
+const Contact = () => {
+  const { theme, isDarkMode } = useContext(ThemeContext);
   const [isLoading, setIsLoading] = useState(true);
-
   useEffect(() => {
     // Simulate loading for 2 seconds
     setTimeout(() => {
@@ -13,15 +13,20 @@ const Work = () => {
     }, 1500);
   }, []);
 
-  const { theme } = useContext(ThemeContext);
   return (
     <div>
       {isLoading ? (
-        <div className="flex justify-center items-center min-h-screen bg-black">
-          <BounceLoader color={"#C0A062"} />
+        <div
+          className={`flex justify-center items-center min-h-screen ${
+            isDarkMode ? "bg-black" : "bg-white"
+          }`}
+        >
+          <HashLoader color={isDarkMode ? "#C0A062" : "#000000"} />
         </div>
       ) : (
         <div className={`bg-${theme.bg} min-h-screen relative overflow-hidden`}>
+          {" "}
+          Blog
           <MobileNav />
         </div>
       )}
@@ -29,4 +34,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Contact;

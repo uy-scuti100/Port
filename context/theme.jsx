@@ -1,17 +1,13 @@
 import { createContext, useState, useEffect } from "react";
-
 export const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const toggleTheme = () => {
+    localStorage.setItem("isDarkMode", JSON.stringify(!isDarkMode));
     setIsDarkMode(!isDarkMode);
   };
-
-  useEffect(() => {
-    localStorage.setItem("isDarkMode", JSON.stringify(isDarkMode));
-  }, [isDarkMode]);
 
   useEffect(() => {
     if (
@@ -21,22 +17,24 @@ export const ThemeProvider = ({ children }) => {
       setIsDarkMode(true);
     } else {
       const savedMode = JSON.parse(localStorage.getItem("isDarkMode"));
-      if (savedMode !== null) {
+      if (savedMode !== false) {
         setIsDarkMode(savedMode);
       } else {
         setIsDarkMode(false);
       }
     }
-  }, []);
+  }, [isDarkMode]);
 
   const theme = isDarkMode
     ? {
         bg: "black",
         text: "white ",
+        load: "white",
       }
     : {
-        bg: "white ",
+        bg: "#ffffffda ",
         text: "black ",
+        load: "black",
       };
 
   return (

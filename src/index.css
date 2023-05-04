@@ -4,10 +4,17 @@
 
 * {
   font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
+
 }
 
 .proj-title {
   font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
+}
+
+::selection {
+  background: #ff5a5a;
+  color: #fff;
+  text-shadow: none;
 }
 
 html {
@@ -17,6 +24,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+
 }
 
 .word {
@@ -25,7 +33,6 @@ html {
   font-size: 10vw;
   transform: matrix(1, 0, 0, 1, 0, 0);
   transform-origin: 50% 100%;
-  display: inline-block;
   will-change: text-shadow, transform;
 }
 
@@ -36,7 +43,6 @@ html {
 .num {
   text-transform: capitalize;
   opacity: 0;
-  transition: 0.5s ease 5s;
   animation: dis 0.5s ease-in 1.2s;
   letter-spacing: calc(-4px + -10 * (100vw - 320px) / 1080);
   line-height: 1.2;
@@ -51,36 +57,30 @@ html {
 
 .overlay-1 {
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
   width: 300px;
   height: 100%;
-  background-color: white;
   animation: dismiss 1.5s linear;
   transform: translateX(-200%);
 }
 
 .overlay-2 {
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
   width: 500px;
   height: 100%;
-  background-color: white;
   animation: dismiss-2 1.5s ease;
   transform: translateX(-200%);
 }
 
 .overlay-3 {
   position: absolute;
-  border-radius: 5px;
   top: 0;
   left: 0;
   width: 400px;
   height: 100%;
-  background-color: white;
   animation: dismiss-3 1.5s ease;
   transform: translateX(-200%);
 }

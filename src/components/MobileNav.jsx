@@ -1,26 +1,28 @@
 import { MdOutlineHome, MdWorkOutline } from "react-icons/md";
 import { ImNewspaper } from "react-icons/im";
 import { BsPerson } from "react-icons/bs";
-import { CiSearch } from "react-icons/ci";
+import { AiOutlinePhone } from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 const MobileNav = () => {
   return (
     <div>
-      <div className="flex text-white md:hidden h-[60px] justify-around text-[20px] border-t bg-black border-[#000000] fixed bottom-0 left-0 right-0">
-        <div className="w-[100px] hover:text-white text-brown flex justify-center items-center flex-col border-[#000000]">
+      <div className="flex text-white md:hidden h-[60px] justify-around text-[20px] border-t bg-black border-[#000000] fixed bottom-0 left-0 right-0 z-50">
+        <div className="w-[100px] h-[60px] hover:text-white text-brown flex justify-center items-center flex-col border-[#000000]">
           <Link to="/">
             <MdOutlineHome />
-            <p
-              className="
-           uppercase text-[10px]"
-            >
-              home
-            </p>
           </Link>
+          <p
+            className="
+           uppercase text-[10px]"
+          >
+            home
+          </p>
         </div>
-        <div className="w-[100px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
-          <MdWorkOutline />
+        <div className="w-[100px]  h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
+          <Link to="/work">
+            <MdWorkOutline />
+          </Link>
           <p
             className="
            uppercase text-[10px]"
@@ -28,17 +30,11 @@ const MobileNav = () => {
             work
           </p>
         </div>
-        <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center bg-black items-center flex-col border-l border-[#000000]">
-          <ImNewspaper />
-          <p
-            className="
-           uppercase text-[10px]"
-          >
-            blog
-          </p>
-        </div>
-        <div className="w-[100px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
-          <BsPerson />
+
+        <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
+          <Link to="/about">
+            <BsPerson />
+          </Link>
           <p
             className="
            uppercase text-[10px]"
@@ -46,13 +42,15 @@ const MobileNav = () => {
             about
           </p>
         </div>
-        <div className="w-[100px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
-          <CiSearch />
+        <div className="w-[100px] h- hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
+          <Link to="/contact">
+            <AiOutlinePhone />
+          </Link>
           <p
             className="
            uppercase text-[10px]"
           >
-            search
+            contact
           </p>
         </div>
       </div>
