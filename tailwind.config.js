@@ -8,7 +8,7 @@ export default {
         brown: "#C0A062",
         black: "#161616 ",
         white: "#ffffff ",
-        ash: "#00000080 ",
+        ash: "#ccc ",
         whiter: "#ffffffda",
       },
     },
