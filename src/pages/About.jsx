@@ -30,8 +30,6 @@ const About = () => {
         </div>
       ) : (
         <div className={`bg-${theme.bg} min-h-screen relative overflow-hidden`}>
-          {" "}
-          Blog
           <Topbar />
           <MobileTopBar />
           <Profile />

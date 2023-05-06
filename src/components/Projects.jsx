@@ -15,9 +15,7 @@ const Projects = () => {
           </h1>
           <div>
             <div
-              className={`${
-                isDarkMode ? "text-[#00000080]" : "text-[#00000080]"
-              }
+              className={`${isDarkMode ? "text-[#00000080]" : "text-[#4A4B65]"}
               } flex items-center text-[10px] md:text-[14px] space-x-4 md:space-x-8 text-ash md:before:w-[150px] md:before:h-[2px] md:before:bg-brown md:before:mr-4 md:px-[20px] px-[10px] py-10 uppercase leading-normal font-normal font-sans `}
             >
               <p> Y. 2022</p>
@@ -29,7 +27,7 @@ const Projects = () => {
           <div className="md:p-10">
             <p
               className={`${
-                isDarkMode ? "text-[#8d8d8da1]" : "text-[#00000080]"
+                isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
               } md:text-[18px] font-[300]`}
             >
               Our landing page design will feature a clear and compelling
@@ -40,7 +38,7 @@ const Projects = () => {
             </p>
 
             <Link to="https://hotel-flame-pi.vercel.app/">
-              <button className="my-5 text-[13px] leading-[16px] font-[roboto] border-b border-brown uppercase text-[#00000080] font-bold">
+              <button className="my-5 text-[13px] leading-[16px] font-[roboto] border-b border-brown uppercase text-[#4A4B65] font-bold">
                 View Project
               </button>
             </Link>

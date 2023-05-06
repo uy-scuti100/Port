@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { ThemeContext } from "../../context/theme";
+import { Link } from "react-router-dom";
 
 const Works = () => {
   const { theme, isDarkMode } = useContext(ThemeContext);
@@ -28,9 +29,9 @@ const Works = () => {
       <div className="py-[50px] px-[20px] md:px-[100px] md:py-[100px] flex flex-col md:flex-row gap-10 items-start">
         <div className="max-w-[650px] ">
           <div className=" bg-[#262626] rounded-t-lg p-4 flex gap-1 justify-start items-center">
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
+            <span className="rounded-full p-1 bg-[#F35F57] "></span>
+            <span className="rounded-full p-1 bg-[#F6BC2E]"></span>
+            <span className="rounded-full p-1 bg-[#3CCB5A]"></span>
           </div>
           <div className="md:w-[650px] md:h-[500px] h-[350px]">
             <img
@@ -111,12 +112,14 @@ const Works = () => {
               temporibus quibusdam dolorem fugit quae aspernatur quis porro
               quasi tenetur inventore?
             </p>
-            <button
-              className={`text-${theme.text} uppercase border border-brown px-5 py-2  mt-5 leading-[1] font-normal text-[16px]`}
-            >
-              {" "}
-              View Project
-            </button>
+            <Link to="https://hotel-flame-pi.vercel.app/">
+              <button
+                className={`text-${theme.text} uppercase border border-brown px-5 py-2  mt-5 leading-[1] font-normal text-[16px]`}
+              >
+                {" "}
+                View Project
+              </button>
+            </Link>
           </div>
         </div>
       </div>

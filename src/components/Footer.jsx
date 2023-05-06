@@ -9,7 +9,7 @@ import { TiSocialLinkedin } from "react-icons/ti";
 const Footer = () => {
   const { isDarkMode, theme } = useContext(ThemeContext);
   return (
-    <div className="md:py-20 pt-10 pb-20 flex gap-5 flex-col justify-center items-center z-10">
+    <div className="md:py-20 pt-10 pb-20 flex gap-5 flex-col justify-center items-center z-10 ">
       <div>
         <svg
           width="70px"
@@ -39,7 +39,13 @@ const Footer = () => {
       <div className="text-[#636262]">
         &copy; {new Date().toDateString().split(" ")[3]}
       </div>
-      <div className={`${isDarkMode ? "text-[#636262]" : "text-black"}`}>
+      <div
+        className={`${
+          isDarkMode
+            ? "text-[#636262] text-[13px] font-[roboto]"
+            : "text-black text-[13px] font-[roboto]"
+        }`}
+      >
         Built With{" "}
         <Link to="https://react.dev">
           <span className="text-brown">React</span>
@@ -49,13 +55,25 @@ const Footer = () => {
           <span className="text-brown">Vite</span>
         </Link>{" "}
       </div>
-      <div className={`${isDarkMode ? "text-[#636262]" : "text-black"}`}>
+      <div
+        className={`${
+          isDarkMode
+            ? "text-[#636262] text-[13px] font-[roboto]"
+            : "text-black text-[13px] font-[roboto]"
+        }`}
+      >
         Styled With{" "}
         <Link to="https://tailwindcss.com/">
           <span className="text-brown">Tailwind Css</span>
         </Link>
       </div>
-      <div className={`${isDarkMode ? "text-[#636262]" : "text-black"}`}>
+      <div
+        className={`${
+          isDarkMode
+            ? "text-[#636262] text-[13px] font-[roboto]"
+            : "text-black text-[13px] font-[roboto]"
+        }`}
+      >
         Hosted on{" "}
         <Link to="https://vercel.com/">
           <span className="text-brown"> Vercel</span>

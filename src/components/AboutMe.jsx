@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../context/theme";
 import { textVariant, staggerContainer, slideIn } from "../utils/motion";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const AboutMe = () => {
   const { theme, isDarkMode } = useContext(ThemeContext);
@@ -16,13 +17,11 @@ const AboutMe = () => {
       <motion.p
         variants={textVariant(0.2)}
         className={`${
-          isDarkMode ? "text-[#8d8d8da1]" : "text-[#00000080]"
-        }  p-[20px] md:p-[100px] about font-bold leading-[1.8] md:hidden`}
+          isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
+        }  p-[20px] md:p-[100px] about font-black leading-[1.8] md:hidden`}
       >
         Hello! I’m &nbsp;
-        <strong className={`text-${theme.text} font-bold`}>
-          Hussain Yusuf
-        </strong>
+        <strong className={`text-${theme.text}`}>Hussain Yusuf</strong>
         &nbsp;. I'm a self-taught web developer with a year of experience. I'm
         dedicated to learning new technologies and techniques, and I'm
         passionate about taking on new challenges. I'm eager to collaborate with
@@ -31,11 +30,11 @@ const AboutMe = () => {
       <motion.div
         variants={textVariant(0.2)}
         className={`${
-          isDarkMode ? "text-[#8d8d8da1]" : "text-[#00000080]"
+          isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
         } hidden md:block  md:p-[50px] text-[18px] about font-bold leading-[1.8] md:ml-28`}
       >
         Hello! I’m &nbsp;
-        <strong className={`text-${theme.text} font-bold`}>
+        <strong className={`text-${theme.text} font-extrabold`}>
           Hussain Yusuf
         </strong>
         &nbsp;. I'm a self-taught web developer with a year of experience.{" "}
@@ -45,11 +44,18 @@ const AboutMe = () => {
         of web development.
       </motion.div>
       <div
-        className="text-[#8d8d8da1] p-[30px] md:py-[10px] md:px-[50px]
-    text-[18px] about font-bold leading-[1.8] md:ml-28"
+        className={`${
+          isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
+        } p-[30px] md:py-[10px] md:px-[50px]
+    text-[18px] about font-bold leading-[1.8] md:ml-28`}
       >
         Find out more{" "}
-        <span className="border-b border-brown pb-1"> about me</span>
+        <Link to="/about">
+          <span className="border-b border-brown pb-1 uppercase">
+            {" "}
+            about me
+          </span>
+        </Link>
       </div>
       <div>
         {isDarkMode ? (

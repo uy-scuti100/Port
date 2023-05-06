@@ -13,16 +13,19 @@ const Topbar = () => {
       whileInView="show"
       className="hidden md:flex w-full p-10 items-center justify-between "
     >
-      <div className="flex items-center gap-5">
-        <div className="bg-brown w-[60px] h-[60px] text-black flex items-center justify-center font-[roboto] text-[18px] font-bold ">
-          HY
+      <Link to="/">
+        <div className="flex items-center gap-5">
+          <div className="bg-brown w-[60px] h-[60px] text-black flex items-center justify-center font-[roboto] text-[18px] font-bold ">
+            HY
+          </div>
+
+          <div
+            className={`font-[roboto] text-[18px] capitalize font-bold leading-[80px] text-${theme.text}`}
+          >
+            Hussain Yusuf
+          </div>
         </div>
-        <div
-          className={`font-[roboto] text-[18px] capitalize font-bold leading-[80px] text-${theme.text}`}
-        >
-          Hussain Yusuf
-        </div>
-      </div>
+      </Link>
       <div
         className={`flex items-center text-[18px] font-bold text-${theme.text} font-[roboto] 
       `}

@@ -11,6 +11,9 @@ export default {
         ash: "#ccc ",
         whiter: "#ffffffda",
       },
+      transitionProperty: {
+        colors: "all 1s ease-in-out",
+      },
     },
   },
   plugins: [],

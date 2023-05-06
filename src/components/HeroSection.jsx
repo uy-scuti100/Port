@@ -48,9 +48,11 @@ const HeroSection = () => {
         </div>
       </div>
       <div
-        className="flex items-center text-[24px] space-x-4
-        md:space-x-8 text-ash md:before:w-[150px] before:w-[80px] before:h-[2px] before:bg-brown
-        before:mr-4 px-[20px] md:text-[36px] py-5"
+        className={`${
+          isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
+        } flex items-center text-[24px] space-x-4
+        md:space-x-8 md:before:w-[150px] before:w-[80px] before:h-[2px] before:bg-brown
+        before:mr-4 px-[20px] md:text-[36px] py-5`}
       >
         <p>
           <Link to="https://www.instagram.com/_uy_scuti____/">

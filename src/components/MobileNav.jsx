@@ -7,52 +7,52 @@ import { Link } from "react-router-dom";
 const MobileNav = () => {
   return (
     <div>
-      <div className="flex text-white md:hidden h-[60px] justify-around text-[20px] border-t bg-black border-[#000000] fixed bottom-0 left-0 right-0 z-50">
-        <div className="w-[100px] h-[60px] hover:text-white text-brown flex justify-center items-center flex-col border-[#000000]">
-          <Link to="/">
+      <div className="flex text-white md:hidden h-[60px] justify-between text-[20px] border-t bg-black border-[#000000] fixed bottom-0 left-0 right-0 z-50">
+        <Link to="/">
+          <div className="w-[100px] h-[60px] hover:text-white text-brown flex justify-center items-center flex-col border-[#000000]">
             <MdOutlineHome />
-          </Link>
-          <p
-            className="
+            <p
+              className="
            uppercase text-[10px]"
-          >
-            home
-          </p>
-        </div>
-        <div className="w-[100px]  h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
-          <Link to="/work">
+            >
+              home
+            </p>
+          </div>
+        </Link>
+        <Link to="/work">
+          <div className="w-[100px]  h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
             <MdWorkOutline />
-          </Link>
-          <p
-            className="
+            <p
+              className="
            uppercase text-[10px]"
-          >
-            work
-          </p>
-        </div>
+            >
+              work
+            </p>
+          </div>
+        </Link>
 
-        <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
-          <Link to="/about">
+        <Link to="/about">
+          <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
             <BsPerson />
-          </Link>
-          <p
-            className="
+            <p
+              className="
            uppercase text-[10px]"
-          >
-            about
-          </p>
-        </div>
-        <div className="w-[100px] h- hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
-          <Link to="/contact">
+            >
+              about
+            </p>
+          </div>
+        </Link>
+        <Link to="/contact">
+          <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
             <AiOutlinePhone />
-          </Link>
-          <p
-            className="
+            <p
+              className="
            uppercase text-[10px]"
-          >
-            contact
-          </p>
-        </div>
+            >
+              contact
+            </p>
+          </div>
+        </Link>
       </div>
     </div>
   );
