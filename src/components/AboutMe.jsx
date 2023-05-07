@@ -18,14 +18,23 @@ const AboutMe = () => {
         variants={textVariant(0.2)}
         className={`${
           isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
-        }  p-[20px] md:p-[100px] about font-black leading-[1.8] md:hidden`}
+        }  p-[20px] md:p-[100px] about leading-[1.8] md:hidden`}
       >
         Hello! I’m &nbsp;
-        <strong className={`text-${theme.text}`}>Hussain Yusuf</strong>
-        &nbsp;. I'm a self-taught web developer with a year of experience. I'm
-        dedicated to learning new technologies and techniques, and I'm
-        passionate about taking on new challenges. I'm eager to collaborate with
-        others and make a positive impact in the world of web development.
+        <strong className={`text-${theme.text}`}>Hussain Yusuf.</strong>
+        &nbsp; As a web developer, my top priority is to create user-centered,
+        responsive web experiences that showcase your brand in the best possible
+        light. From crafting custom websites that perfectly align with your
+        brand to building sites that convert visitors into customers, I leverage
+        my skills and expertise to create innovative digital solutions that help
+        your business succeed. I also focus on combining creativity and
+        technology to set your brand apart, crafting unique web experiences that
+        truly resonate with your audience. By working with me, you can rest
+        assured that your website will be more than just a digital storefront—it
+        will be a meaningful online experience that connects with your customers
+        and drives business growth. So if you're ready to elevate your online
+        presence and take your digital strategy to the next level, let's work
+        together to make it happen.
       </motion.p>
       <motion.div
         variants={textVariant(0.2)}
@@ -37,11 +46,19 @@ const AboutMe = () => {
         <strong className={`text-${theme.text} font-extrabold`}>
           Hussain Yusuf
         </strong>
-        &nbsp;. I'm a self-taught web developer with a year of experience.{" "}
-        <br /> I'm dedicated to learning new technologies and techniques, and
-        I'm passionate about taking <br /> on new challenges. I'm eager to
-        collaborate with others and make a positive impact in the world <br />{" "}
-        of web development.
+        &nbsp;. As a web developer, my top priority is to create user-centered,
+        responsive web experiences that showcase your brand in the best possible
+        light. From crafting custom websites that perfectly align with your
+        brand to building sites that convert visitors into customers, I leverage
+        my skills and expertise to create innovative digital solutions that help
+        your business succeed. I also focus on combining creativity and
+        technology to set your brand apart, crafting unique web experiences that
+        truly resonate with your audience. By working with me, you can rest
+        assured that your website will be more than just a digital storefront—it
+        will be a meaningful online experience that connects with your customers
+        and drives business growth. So if you're ready to elevate your online
+        presence and take your digital strategy to the next level, let's work
+        together to make it happen.
       </motion.div>
       <div
         className={`${

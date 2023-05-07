@@ -32,7 +32,7 @@ export const ThemeProvider = ({ children }) => {
         load: "white",
       }
     : {
-        bg: "#ffffffda ",
+        bg: "#f5f5f5 ",
         text: "black ",
         load: "black",
       };

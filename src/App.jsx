@@ -4,13 +4,16 @@ import About from "./pages/About";
 import Work from "./pages/Work";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
+import { useContext } from "react";
+import { ThemeContext } from "../context/theme";
 
 function App() {
+  const { isDarkMode } = useContext(ThemeContext);
   return (
-    <div className="app">
+    <div className={`${isDarkMode ? "bg-black" : "bg-white"}`}>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/blog" element={<Blog />} />

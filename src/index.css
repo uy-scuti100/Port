@@ -6,6 +6,15 @@
   font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
 }
 
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 .proj-title {
   font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
 }
@@ -15,35 +24,28 @@
   color: #fff;
   text-shadow: none;
 }
+
+/* theme switch color transition */
 .bg-white {
-  -webkit-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-  transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .bg-black {
-  -webkit-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-  transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .bg-brown {
-  -webkit-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-  transition: al1.8s cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: al1 0.5s ease-in-out;
 }
 .bg-ash {
-  -webkit-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-  transition: all 01 cubic-bezier(0.79, 0.33, 0.14, 0.53);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .bg-whiter {
-  -webkit-transition: all 1s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-  transition: 1l 0.8s cubic-bezier(0.79, 0.33, 0.14, 0.53);
-}
-
-html {
-  box-sizing: border-box;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: a1l 0.5s ease-in-out;
 }
 
 /* works pages css */
@@ -59,6 +61,8 @@ html {
   font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
   line-height: 1;
 }
+
+/* animations for homepage */
 
 .word {
   font-weight: 900;

@@ -7,7 +7,7 @@ export default {
       colors: {
         brown: "#C0A062",
         black: "#161616 ",
-        white: "#ffffff ",
+        white: "#f5f5f5 ",
         ash: "#ccc ",
         whiter: "#ffffffda",
       },

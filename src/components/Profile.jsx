@@ -16,7 +16,7 @@ const Profile = () => {
           Web & Mobile Developer.
         </h1>
       </div>
-      <div className="flex justify-center flex-col md:flex-row gap-10 px-10 ">
+      <div className="flex justify-center flex-col md:flex-row gap-5 px-10 ">
         <div className="md:basis-1/2 md:w-[400px] md:h-[400px] w-[450px] h-[450px] relative self-start">
           <div className="relative ">
             <img

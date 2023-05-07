@@ -16,7 +16,7 @@ const Projects = () => {
           <div>
             <div
               className={`${isDarkMode ? "text-[#00000080]" : "text-[#4A4B65]"}
-              } flex items-center text-[10px] md:text-[14px] space-x-4 md:space-x-8 text-ash md:before:w-[150px] md:before:h-[2px] md:before:bg-brown md:before:mr-4 md:px-[20px] px-[10px] py-10 uppercase leading-normal font-normal font-sans `}
+              } flex items-center text-[10px] md:text-[14px] space-x-4 md:space-x-8 md:before:w-[150px] md:before:h-[2px] md:before:bg-brown md:before:mr-4 md:px-[20px] px-[10px] py-10 uppercase leading-normal font-normal font-sans `}
             >
               <p> Y. 2022</p>
               <p> C. BankHotel</p>

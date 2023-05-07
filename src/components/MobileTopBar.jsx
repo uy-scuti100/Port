@@ -19,7 +19,7 @@ const MobileTopBar = () => {
           HY
         </div>
       </Link>
-      <div className="text-white mr-3" onClick={toggleTheme}>
+      <div className="text-white mr-3 cursor-pointer" onClick={toggleTheme}>
         {isDarkMode ? (
           <BsToggleOn size={36} style={{ color: "#fff", rotate: "180deg" }} />
         ) : (

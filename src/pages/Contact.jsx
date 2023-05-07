@@ -5,6 +5,7 @@ import { HashLoader } from "react-spinners";
 import Topbar from "../components/Topbar";
 import MobileTopBar from "../components/MobileTopBar";
 import Toggle from "../components/Toggle";
+import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 
 const Contact = () => {
@@ -32,6 +33,7 @@ const Contact = () => {
           {" "}
           <Topbar />
           <MobileTopBar />
+          <ContactForm />
           <MobileNav />
           <Toggle />
           <Footer />
