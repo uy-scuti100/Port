@@ -84,9 +84,9 @@ const Works = () => {
       <div className="py-[50px] px-[20px] md:px-[100px] md:py-[100px] flex flex-col md:flex-row gap-10 items-start">
         <div className="max-w-[650px] md:order-2">
           <div className=" bg-[#262626] rounded-t-lg p-4 flex gap-1 justify-start items-center">
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
+            <span className="rounded-full p-1 bg-[#F35F57] "></span>
+            <span className="rounded-full p-1 bg-[#F6BC2E]"></span>
+            <span className="rounded-full p-1 bg-[#3CCB5A]"></span>
           </div>
           <div className="md:w-[650px] md:h-[500px] h-[350px] md:order-1">
             <img
@@ -141,9 +141,9 @@ const Works = () => {
       <div className="py-[50px] px-[20px] md:px-[100px] md:py-[100px] flex flex-col md:flex-row gap-10 items-start">
         <div className="max-w-[650px]">
           <div className=" bg-[#262626] rounded-t-lg p-4 flex gap-1 justify-start items-center">
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
+            <span className="rounded-full p-1 bg-[#F35F57] "></span>
+            <span className="rounded-full p-1 bg-[#F6BC2E]"></span>
+            <span className="rounded-full p-1 bg-[#3CCB5A]"></span>
           </div>
           <div className="md:w-[650px] md:h-[500px] h-[350px]">
             <img
@@ -196,9 +196,9 @@ const Works = () => {
       <div className="py-[50px] px-[20px] md:px-[100px] md:py-[100px] flex flex-col md:flex-row gap-10 items-start">
         <div className="max-w-[650px] md:order-2">
           <div className=" bg-[#262626] rounded-t-lg p-4 flex gap-1 justify-start items-center">
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
+            <span className="rounded-full p-1 bg-[#F35F57] "></span>
+            <span className="rounded-full p-1 bg-[#F6BC2E]"></span>
+            <span className="rounded-full p-1 bg-[#3CCB5A]"></span>
           </div>
           <div className="md:w-[650px] md:h-[500px] h-[350px] md:order-1">
             <img
@@ -251,9 +251,9 @@ const Works = () => {
       <div className="py-[50px] px-[20px] md:px-[100px] md:py-[100px] flex flex-col md:flex-row gap-10 items-start">
         <div className="max-w-[650px]">
           <div className=" bg-[#262626] rounded-t-lg p-4 flex gap-1 justify-start items-center">
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
+            <span className="rounded-full p-1 bg-[#F35F57] "></span>
+            <span className="rounded-full p-1 bg-[#F6BC2E]"></span>
+            <span className="rounded-full p-1 bg-[#3CCB5A]"></span>
           </div>
           <div className="md:w-[650px] h-[500px]md:h-[500px] h-[350px]">
             <img
@@ -306,9 +306,9 @@ const Works = () => {
       <div className="py-[50px] px-[20px] md:px-[100px] md:py-[100px] flex flex-col md:flex-row gap-10 items-start">
         <div className="max-w-[650px] md:order-2">
           <div className=" bg-[#262626] rounded-t-lg p-4 flex gap-1 justify-start items-center">
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
-            <span className="rounded-full p-1 bg-black"></span>
+            <span className="rounded-full p-1 bg-[#F35F57] "></span>
+            <span className="rounded-full p-1 bg-[#F6BC2E]"></span>
+            <span className="rounded-full p-1 bg-[#3CCB5A]"></span>
           </div>
           <div className="md:w-[650px] md:h-[500px] h-[350px] md:order-1">
             <img

@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 const MobileNav = () => {
   return (
     <div>
-      <div className="flex text-white md:hidden h-[60px] justify-between text-[20px] border-t bg-black border-[#000000] fixed bottom-0 left-0 right-0 z-50">
+      <div className="flex text-white md:hidden  items-end justify-between text-[20px] border-t bg-black border-[#000000] fixed -bottom-1 left-0 right-0 z-50 px-4 py-4">
         <Link to="/">
-          <div className="w-[100px] h-[60px] hover:text-white text-brown flex justify-center items-center flex-col border-[#000000]">
+          <div className="hover:text-white text-brown flex items-center justify-center flex-col">
             <MdOutlineHome />
             <p
               className="
@@ -20,7 +20,7 @@ const MobileNav = () => {
           </div>
         </Link>
         <Link to="/work">
-          <div className="w-[100px]  h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
+          <div className="hover:text-white text-brown flex items-center flex-col  self-center">
             <MdWorkOutline />
             <p
               className="
@@ -32,7 +32,7 @@ const MobileNav = () => {
         </Link>
 
         <Link to="/about">
-          <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
+          <div className="hover:text-white text-brown flex items-center flex-col ">
             <BsPerson />
             <p
               className="
@@ -43,7 +43,7 @@ const MobileNav = () => {
           </div>
         </Link>
         <Link to="/contact">
-          <div className="w-[100px] h-[60px] hover:text-white text-brown flex  justify-center items-center flex-col border-l border-[#000000]">
+          <div className="hover:text-white text-brown flex items-center flex-col ">
             <AiOutlinePhone />
             <p
               className="
