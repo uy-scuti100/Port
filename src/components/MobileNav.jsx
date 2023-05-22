@@ -1,58 +1,90 @@
+import { useState, useEffect } from "react";
 import { MdOutlineHome, MdWorkOutline } from "react-icons/md";
-import { ImNewspaper } from "react-icons/im";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { ClimbingBoxLoader } from "react-spinners";
 
 const MobileNav = () => {
+  const [activeLink, setActiveLink] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [location]);
+
   return (
     <div>
-      <div className="flex text-white md:hidden  items-end justify-between text-[20px] border-t bg-black border-[#000000] fixed -bottom-1 left-0 right-0 z-50 px-4 py-4">
-        <Link to="/">
-          <div className="hover:text-white text-brown flex items-center justify-center flex-col">
+      <div className="flex md:hidden justify-between text-[20px] border-t bg-black border-[#000000] fixed -bottom-1 left-0 right-0 z-50 px-4 py-4">
+        <NavLink
+          to="/"
+          // activeClassName="text-white"
+          className={`text-${
+            activeLink === "/" ? "white" : "brown"
+          } flex items-center justify-center flex-col`}
+        >
+          <div>
             <MdOutlineHome />
-            <p
-              className="
-           uppercase text-[10px]"
-            >
-              home
-            </p>
           </div>
-        </Link>
-        <Link to="/work">
-          <div className="hover:text-white text-brown flex items-center flex-col  self-center">
+          <p
+            className="
+           uppercase text-[10px]"
+          >
+            home
+          </p>
+        </NavLink>
+        <NavLink
+          to="/work"
+          // activeClassName="text-white"
+          className={`text-${
+            activeLink === "/work" ? "white" : "brown"
+          } flex items-center justify-center flex-col`}
+        >
+          <div>
             <MdWorkOutline />
-            <p
-              className="
-           uppercase text-[10px]"
-            >
-              work
-            </p>
           </div>
-        </Link>
+          <p
+            className="
+           uppercase text-[10px]"
+          >
+            work
+          </p>
+        </NavLink>
 
-        <Link to="/about">
-          <div className="hover:text-white text-brown flex items-center flex-col ">
+        <NavLink
+          to="/about"
+          // activeClassName="text-white"
+          className={`text-${
+            activeLink === "/about" ? "white" : "brown"
+          } flex items-center justify-center flex-col`}
+        >
+          <div>
             <BsPerson />
-            <p
-              className="
-           uppercase text-[10px]"
-            >
-              about
-            </p>
           </div>
-        </Link>
-        <Link to="/contact">
-          <div className="hover:text-white text-brown flex items-center flex-col ">
+          <p
+            className="
+           uppercase text-[10px]"
+          >
+            about
+          </p>
+        </NavLink>
+        <NavLink
+          to="/contact"
+          // activeClassName="text-white"
+          className={`text-${
+            activeLink === "/contact" ? "white" : "brown"
+          } flex items-center justify-center flex-col`}
+        >
+          <div>
             <AiOutlinePhone />
-            <p
-              className="
-           uppercase text-[10px]"
-            >
-              contact
-            </p>
           </div>
-        </Link>
+          <p
+            className="
+           uppercase text-[10px]"
+          >
+            contact
+          </p>
+        </NavLink>
       </div>
     </div>
   );

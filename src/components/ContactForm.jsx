@@ -39,9 +39,9 @@ const ContactForm = () => {
       {/* contact-card */}
       <div className="flex justify-center items-center flex-col md:flex-row gap-3 justify-evenly">
         <div
-          className={`max-w-[387px] max-h-[420px] ${
+          className={`w-[387px] h-[500px] ${
             isDarkMode ? "bg-[#ccc]" : "bg-black"
-          } rounded-[5px] flex flex-col gap-3 items-center relative overflow-hidden md:basis-1/2`}
+          } rounded-[5px] flex flex-col gap-3 items-center justify-center relative overflow-hidden md:basis-1/2`}
         >
           <h1
             className={`${
@@ -109,7 +109,7 @@ const ContactForm = () => {
           </div>
         </div>
         {/* form */}
-        <div className="md:basis-1/2">
+        {/* <div className="md:basis-1/2">
           <div
             className={`${
               isDarkMode ? "bg-black text-white" : "bg-white text-black"
@@ -231,7 +231,7 @@ const ContactForm = () => {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

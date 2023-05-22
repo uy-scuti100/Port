@@ -20,7 +20,7 @@ const Profile = () => {
         <div className="md:basis-1/2 md:w-[400px] md:h-[400px] w-[450px] h-[450px] relative self-start">
           <div className="relative ">
             <img
-              src="images/profile.JPG"
+              src="images/profile.jfif"
               alt="profile image"
               className=" md:w-[400px] md:h-[400px] max-w-[450px] max-h-[450px] object-cover"
             />
