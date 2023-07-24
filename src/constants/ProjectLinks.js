@@ -29,7 +29,7 @@ export const links = [
   },
   {
     label: "Musica ",
-    href: "/",
+    href: "https://musica-nine-sigma.vercel.app/",
     year: "Y. 2023",
     concept: "C. Musica",
     type: "Side Proj",
