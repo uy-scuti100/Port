@@ -18,7 +18,7 @@ const HeroSection = () => {
           <h1
             className={` ${isDarkMode ? "darkshadow" : "lightshadow"} word num`}
           >
-            Design. Code.
+            Design. Codes.
           </h1>
           <p className={`bg-${theme.load} overlay-1`}></p>
         </div>
