@@ -37,7 +37,7 @@ const ContactForm = () => {
       </p>
 
       {/* contact-card */}
-      <div className="flex justify-center items-center flex-col md:flex-row gap-3 justify-evenly">
+      <div className="flex justify-center items-center flex-col md:flex-row gap-3">
         <div
           className={`w-[387px] h-[500px] ${
             isDarkMode ? "bg-[#ccc]" : "bg-black"
@@ -56,7 +56,7 @@ const ContactForm = () => {
           <p
             className={`${
               isDarkMode ? "text-[#000000]" : "text-white"
-            } font-sans font-[500] font-[400] text-[12px] tracking-wider leading-[18px] pb-3`}
+            } font-sans font-[500]  text-[12px] tracking-wider leading-[18px] pb-3`}
           >
             {" "}
             +234 803 9282 266

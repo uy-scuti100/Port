@@ -3,7 +3,6 @@ import { MdOutlineHome, MdWorkOutline } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import { AiOutlinePhone } from "react-icons/ai";
 import { NavLink, useLocation } from "react-router-dom";
-import { ClimbingBoxLoader } from "react-spinners";
 
 const MobileNav = () => {
   const [activeLink, setActiveLink] = useState("");

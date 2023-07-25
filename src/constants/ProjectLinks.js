@@ -1,5 +1,12 @@
 export const links = [
   {
+    label: "Bank Hotel",
+    href: "https://hotel-flame-pi.vercel.app/",
+    year: "Y. 2023",
+    concept: "C. Bank Hotel",
+    type: "T. Side Proj",
+  },
+  {
     label: "Scuti Travel Website",
     href: "https://travels-rust.vercel.app/",
     year: "Y. 2023",

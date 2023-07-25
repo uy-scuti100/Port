@@ -4,8 +4,11 @@ import { useContext } from "react";
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
 import { Link } from "react-router-dom";
+import { links } from "../constants/topLinks";
 const Topbar = () => {
   const { theme, isDarkMode, toggleTheme } = useContext(ThemeContext);
+
+  const path = window.location.pathname;
   return (
     <motion.div
       variants={navVariants}
@@ -30,19 +33,20 @@ const Topbar = () => {
         className={`flex items-center text-[18px] font-bold text-${theme.text} font-[roboto] 
       `}
       >
-        <Link to="/">
-          {" "}
-          <p className="px-5 hover:text-brown">Home</p>
-        </Link>
-        <Link to="/work">
-          <p className="px-5 hover:text-brown">Work</p>
-        </Link>
-        <Link to="/about">
-          <p className="px-5 hover:text-brown">About</p>
-        </Link>
-        <Link to="/contact">
-          <p className="px-5 hover:text-brown">Contact</p>
-        </Link>
+        {links.map((link) => {
+          const { label, href } = link;
+          return (
+            <Link to={href} key={label}>
+              <p
+                className={`px-5 hover:text-brown ${
+                  path === href && "text-brown"
+                }`}
+              >
+                {label}
+              </p>
+            </Link>
+          );
+        })}
         <div className="text-white mr-3 cursor-pointer" onClick={toggleTheme}>
           {isDarkMode ? (
             <BsToggleOn size={36} style={{ color: "#fff", rotate: "180deg" }} />
