@@ -5,11 +5,7 @@ import { links } from "../constants/ProjectLinks";
 
 const Overview = () => {
   const { theme, isDarkMode } = useContext(ThemeContext);
-  const [hover, setHover] = useState(false);
 
-  const hoverToggle = () => {
-    setHover((prev) => !prev);
-  };
   return (
     <div className="max-w-[1680px]">
       <div className="p-[20px] md:p-[100px] ">
@@ -29,19 +25,11 @@ const Overview = () => {
             <ul key={label}>
               <Link to={href}>
                 <li
-                  className={`text-${theme.text} bg-${
-                    isDarkMode ? "[#000000]" : "[#ece5e5]"
+                  className={`text-${theme.text} ${
+                    isDarkMode ? "bg-[#000000]" : "bg-[#ece5e5]"
+                  }
                   } h-[337px] w-[363px] py-5 px-10 m-4 relative overflow-hidden transition-all duration-500 ease-in-out `}
-                  onMouseDown={hoverToggle}
                 >
-                  {hover && (
-                    <div className="absolute bottom-[100px] right-[80px] transition-all duration-500 ease-in-out">
-                      <div className="relative">
-                        <div className="rounded-full bg-[#484848]/50 w-[54px] h-[54px] absolute "></div>
-                        <div className="rounded-full bg-[#484848]/50 w-[192px] h-[192px] absolute"></div>
-                      </div>
-                    </div>
-                  )}
                   <p
                     className={`capitalize text-[24px] py-10 relative after:absolute after:content-[""] after:bottom-0 after:left-0 after:bg-brown after:w-[10%] after:h-[1px] mb-3`}
                   >

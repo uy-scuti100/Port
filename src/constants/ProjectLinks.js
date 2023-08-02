@@ -1,5 +1,12 @@
 export const links = [
   {
+    label: "Leap Of Faith",
+    href: "https://leaps-of-faith.vercel.app/",
+    year: "Y. 2023",
+    concept: "C. Leap Of Faith",
+    type: "T. Side Proj",
+  },
+  {
     label: "Bank Hotel",
     href: "https://hotel-flame-pi.vercel.app/",
     year: "Y. 2023",

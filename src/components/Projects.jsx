@@ -32,18 +32,17 @@ const Projects = () => {
                 isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
               } md:text-[18px] font-[300]`}
             >
-              Welcome to my blog website! Here, you will find a collection of
-              thought-provoking articles on various topics, including
-              technology, business, and personal growth. With engaging content
-              and insightful commentary, my blog is designed to inform, inspire,
-              and challenge readers. Whether you're an entrepreneur, a tech
-              enthusiast, or simply someone looking for a fresh perspective, my
-              blog has something for everyone. So why not take a few minutes to
-              browse my latest posts and join the conversation? I look forward
-              to hearing your thoughts!
+              Our website, Leap Of faith, is a haven for shoe enthusiasts and
+              fashion lovers alike. With a diverse and premium selection of
+              footwear, customers can find the perfect pair for any occasion.
+              Our user-friendly interface ensures a seamless shopping
+              experience, while our insightful blog provides valuable knowledge
+              about the world of shoes and fashion. We take pride in creating a
+              vibrant community of shoe lovers and look forward to continually
+              shaping the future of online shoe e-commerce.
             </p>
 
-            <Link to="https://blog-psi-plum.vercel.app/">
+            <Link to="https://leaps-of-faith.vercel.app/">
               <button className="my-5 text-[13px] leading-[16px] font-[roboto] border-b border-brown uppercase text-[#8d8d8da1] font-bold">
                 View Project
               </button>
@@ -53,7 +52,7 @@ const Projects = () => {
       </div>
       <div className="md:px-20">
         <img
-          src="images/blog-2.jpg"
+          src="images/leap.jpg"
           alt="/"
           className="object-cover md:h-[600px] md:w-screen"
         />
