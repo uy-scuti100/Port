@@ -55,11 +55,5 @@ export const links = [
       concept: "C. Avion",
       type: "Client Proj",
    },
-   {
-      label: "Musica ",
-      href: "https://musica-nine-sigma.vercel.app/",
-      year: "Y. 2023",
-      concept: "C. Musica",
-      type: "Side Proj",
-   },
+
 ];
