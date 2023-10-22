@@ -1,5 +1,12 @@
 export const links = [
    {
+      label: "Nexus",
+      href: "https://react-nexus-nine.vercel.app/",
+      year: "Y. 2023",
+      concept: "C. Nexus Blog app",
+      type: "T. Side Proj",
+   },
+   {
       label: "Leap Of Faith",
       href: "https://leaps-of-faith.vercel.app/",
       year: "Y. 2023",

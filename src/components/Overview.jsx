@@ -23,7 +23,7 @@ const Overview = () => {
 
           return (
             <ul key={label}>
-              <Link to={href}>
+              <Link to={href} target="_blank">
                 <li
                   className={`text-${theme.text} ${
                     isDarkMode ? "bg-[#000000]" : "bg-[#ece5e5]"
@@ -52,7 +52,7 @@ const Overview = () => {
           );
         })}
       </div>
-      <div className="flex justify-center items-center pt-20 pb-10">
+      <div className="flex items-center justify-center pt-20 pb-10">
         <Link to="/work">
           <button
             className={`text-${theme.text} uppercase bg-brown px-5 py-2 leading-[1] font-normal text-[16px]`}
@@ -72,7 +72,7 @@ const Overview = () => {
             />
           </div>
         ) : (
-          <div className="flex  justify-center">
+          <div className="flex justify-center">
             <img src="images/download.svg" alt="/" className="md:w-[200px]" />
           </div>
         )}
