@@ -7,6 +7,13 @@ export const links = [
       type: "T. Side Proj",
    },
    {
+      label: "Colorado Parents for Qualitu education",
+      href: "https://colorado-parents-for-quality-education.vercel.app/",
+      year: "Y. 2023",
+      concept: "C. CPQE",
+      type: "T. Volunteered Proj",
+   },
+   {
       label: "Leap Of Faith",
       href: "https://leaps-of-faith.vercel.app/",
       year: "Y. 2023",
