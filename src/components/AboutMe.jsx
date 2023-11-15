@@ -18,7 +18,7 @@ const AboutMe = () => {
         variants={textVariant(0.2)}
         className={`${
           isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
-        }  p-[20px] md:p-[100px] about leading-[1.8] md:hidden`}
+        }  p-[20px] md:p-[100px] about font-medium leading-[1.8] md:hidden`}
       >
         Hello! I’m &nbsp;
         <strong className={`text-${theme.text}`}>Hussain Yusuf.</strong>
@@ -40,7 +40,7 @@ const AboutMe = () => {
         variants={textVariant(0.2)}
         className={`${
           isDarkMode ? "text-[#8d8d8da1]" : "text-[#4A4B65]"
-        } hidden md:block  md:p-[50px] text-[18px] about font-bold leading-[1.8] md:ml-28`}
+        } hidden md:block  md:p-[50px] text-[18px] about font-medium leading-[1.8] md:ml-28`}
       >
         Hello! I’m &nbsp;
         <strong className={`text-${theme.text} font-extrabold`}>
@@ -68,7 +68,7 @@ const AboutMe = () => {
       >
         Find out more{" "}
         <Link to="/about">
-          <span className="border-b border-brown pb-1 uppercase">
+          <span className="pb-1 uppercase border-b border-brown">
             {" "}
             about me
           </span>

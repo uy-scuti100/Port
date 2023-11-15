@@ -55,23 +55,23 @@ const HeroSection = () => {
         before:mr-4 px-[20px] md:text-[36px] py-5`}
       >
         <p>
-          <Link to="https://www.instagram.com/_uy_scuti____/">
+          <Link target="_blank" to="https://www.instagram.com/_uy_scuti____/">
             <ImInstagram />
           </Link>
         </p>
         <p>
-          <Link to="https://twitter.com/Hussain_Joe">
+          <Link target="_blank" to="https://twitter.com/Hussain_Joe">
             <FaTwitter />
           </Link>
         </p>
         <p>
-          <Link to="https://github.com/uy-scuti100">
+          <Link target="_blank" to="https://github.com/uy-scuti100">
             <FiGithub />
           </Link>
         </p>
 
         <p>
-          <Link to="https://www.linkedin.com/in/yusuf-hussain-276ab6251/">
+          <Link target="_blank" to="https://www.linkedin.com/in/yusuf-hussain-276ab6251/">
             <TiSocialLinkedin />
           </Link>
         </p>

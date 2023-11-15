@@ -16,7 +16,7 @@ const Profile = () => {
           Web & Mobile Developer.
         </h1>
       </div>
-      <div className="flex justify-center flex-col md:flex-row gap-5 px-10 ">
+      <div className="flex flex-col justify-center gap-5 px-10 md:flex-row ">
         <div className="md:basis-1/2 md:w-[400px] md:h-[400px] w-[450px] h-[450px] relative self-start">
           <div className="relative ">
             <img
@@ -32,7 +32,7 @@ const Profile = () => {
             } absolute top-[20px] -left-4 md:py-[200px] md:px-[200px] py-[220px] px-[190px] border-2`}
           ></div>
         </div>
-        <div className=" md:basis-1/2 pt-10">
+        <div className="pt-10 md:basis-1/2">
           <h1
             className={`text-[29px] font-[roboto] font-bold text-${theme.text} hidden md:block uppercase tracking-[2px]`}
           >
@@ -55,7 +55,7 @@ const Profile = () => {
             expertise is equally impressive, as I leverage an arsenal of
             cutting-edge tools to bring my vision to life. <br /> <br /> My
             current tech stack includes a winning combination of HTML,
-            TailwindCSS, Scss, ReactJs, Nextjs, JavaScript, Nodejs, and Firebase
+            TailwindCSS, Scss, ReactJs, Nextjs, JavaScript, Nodejs Supabase, and Firebase
             for backend operations. This diverse suite of tools affords me the
             flexibility and creative control necessary to build truly bespoke
             websites. <br />

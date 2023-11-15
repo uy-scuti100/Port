@@ -3,6 +3,15 @@
 @tailwind utilities;
 
 * {
+  font-family: Inter, Georgia, "Times New Roman", Times, serif;
+}
+
+/* * {
+  font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
+} */
+
+
+.droid {
   font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
 }
 
@@ -35,14 +44,17 @@ html {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
 .bg-brown {
   -webkit-transition: all 0.5s ease-in-out;
   transition: al1 0.5s ease-in-out;
 }
+
 .bg-ash {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+
 .bg-whiter {
   -webkit-transition: all 0.5s ease-in-out;
   transition: a1l 0.5s ease-in-out;
@@ -82,7 +94,7 @@ html {
 }
 
 .about {
-  font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
+  font-family: Inter, Georgia, "Times New Roman", Times, serif;
 }
 
 .num {

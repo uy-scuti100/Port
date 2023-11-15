@@ -12,7 +12,6 @@ const Work = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading for 2 seconds
     setTimeout(() => {
       setIsLoading(false);
     }, 900);
@@ -34,9 +33,9 @@ const Work = () => {
           <Topbar />
           <MobileTopBar />
           <Works />
-          <MobileNav />
           <Toggle />
           <Footer />
+          <MobileNav />
         </div>
       )}
     </div>
