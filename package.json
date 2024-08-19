@@ -11,18 +11,12 @@
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "animejs": "^3.2.1",
-    "autoprefixer": "^10.4.14",
-    "framer-motion": "^10.12.7",
-=======
     "@gsap/react": "^2.1.1",
     "@studio-freight/react-lenis": "^0.0.47",
     "animejs": "^3.2.1",
     "autoprefixer": "^10.4.14",
     "framer-motion": "^10.12.7",
     "gsap": "^3.12.5",
->>>>>>> 47a0d82 (new change)
     "postcss": "^8.4.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
