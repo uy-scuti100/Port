@@ -6,6 +6,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import { useContext } from "react";
 import { ThemeContext } from "../context/theme";
+<<<<<<< HEAD
 
 function App() {
   const { isDarkMode } = useContext(ThemeContext);
@@ -22,6 +23,27 @@ function App() {
       </BrowserRouter>
     </div>
   );
+=======
+import LenisComponent from "./components/ReactLenis";
+
+function App() {
+	const { isDarkMode } = useContext(ThemeContext);
+	return (
+		<div className={`${isDarkMode ? "bg-black" : "bg-white"}`}>
+			<BrowserRouter>
+				<LenisComponent>
+					<Routes>
+						<Route index element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/work" element={<Work />} />
+						<Route path="/blog" element={<Blog />} />
+						<Route path="/contact" element={<Contact />} />
+					</Routes>
+				</LenisComponent>
+			</BrowserRouter>
+		</div>
+	);
+>>>>>>> 47a0d82 (new change)
 }
 
 export default App;

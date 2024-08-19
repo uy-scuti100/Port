@@ -11,6 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+<<<<<<< HEAD
+=======
+trash.txt
+.env
+>>>>>>> 47a0d82 (new change)
 
 # Editor directories and files
 .vscode/*
@@ -21,4 +26,8 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+<<<<<<< HEAD
 *.sw?
+=======
+*.sw?
+>>>>>>> 47a0d82 (new change)

@@ -1,4 +1,5 @@
 export const links = [
+<<<<<<< HEAD
    {
       label: "Nexus",
       href: "https://react-nexus-nine.vercel.app/",
@@ -70,4 +71,40 @@ export const links = [
       type: "Client Proj",
    },
 
+=======
+	{
+		label: "Bank Hotel",
+		href: "https://hotel-flame-pi.vercel.app/",
+		year: "Y. 2023",
+		concept: "Hospitality",
+	},
+	{
+		label: "Imah Arch",
+		href: "https://imah-arch.netlify.app",
+		year: "Y. 2023",
+		concept: "Architecture",
+	},
+
+	{
+		label: "Leap Of Faith",
+		href: "https://leaps-of-faith.vercel.app/",
+		year: "Y. 2023",
+		concept: "E-commerce",
+		state: "",
+	},
+	{
+		label: "Mozack Furniture",
+		href: "https://mozack.vercel.app/",
+		year: "Y. 2023",
+		concept: "E-commerce",
+		state: "",
+	},
+	{
+		label: "Leap Of Faith",
+		href: "https://leaps-of-faith.vercel.app/",
+		year: "Y. 2023",
+		concept: "E-commerce",
+		state: "",
+	},
+>>>>>>> 47a0d82 (new change)
 ];
