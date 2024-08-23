@@ -27,17 +27,17 @@ const HeroSection = () => {
 			>
 				<p>
 					<Link target="_blank" to="https://www.instagram.com/_uy_scuti____/">
-						<ImInstagram />
+						<ImInstagram className="text-[#8d8d8dee]" />
 					</Link>
 				</p>
 				<p>
 					<Link target="_blank" to="https://twitter.com/Hussain_Joe">
-						<FaTwitter />
+						<FaTwitter className="text-[#8d8d8dee]" />
 					</Link>
 				</p>
 				<p>
 					<Link target="_blank" to="https://github.com/uy-scuti100">
-						<FiGithub />
+						<FiGithub className="text-[#8d8d8dee]" />
 					</Link>
 				</p>
 
@@ -46,7 +46,7 @@ const HeroSection = () => {
 						target="_blank"
 						to="https://www.linkedin.com/in/yusuf-hussain-276ab6251/"
 					>
-						<TiSocialLinkedin />
+						<TiSocialLinkedin className="text-[#8d8d8dee]" />
 					</Link>
 				</p>
 			</div>

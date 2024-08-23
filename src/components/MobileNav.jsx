@@ -100,6 +100,7 @@ export default function MobileNav() {
 						const { label, href } = link;
 						return (
 							<Link
+								onClick={toggleMenuIcon}
 								key={index}
 								to={href}
 								className={`relative text-4xl font-bold uppercase md:text-3xl  menu__item ${

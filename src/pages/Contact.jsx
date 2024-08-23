@@ -9,38 +9,33 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 
 const Contact = () => {
-  const { theme, isDarkMode } = useContext(ThemeContext);
-  const [isLoading, setIsLoading] = useState(true);
-  useEffect(() => {
-    // Simulate loading for 2 seconds
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 900);
-  }, []);
+	const { theme, isDarkMode } = useContext(ThemeContext);
+	const [isLoading, setIsLoading] = useState(true);
+	useEffect(() => {
+		// Simulate loading for 2 seconds
+		setTimeout(() => {
+			setIsLoading(false);
+		}, 900);
+	}, []);
 
-  return (
-    <div>
-      {isLoading ? (
-        <div
-          className={`flex justify-center items-center min-h-screen ${
-            isDarkMode ? "bg-black" : "bg-white"
-          }`}
-        >
-          <HashLoader color={isDarkMode ? "#C0A062" : "#000000"} />
-        </div>
-      ) : (
-        <div className={`bg-${theme.bg} min-h-screen relative overflow-hidden`}>
-          {" "}
-          <Topbar />
-          <MobileTopBar />
-          <ContactForm />
-          <MobileNav />
-          <Toggle />
-          <Footer />
-        </div>
-      )}
-    </div>
-  );
+	return (
+		<div>
+			{isLoading ? (
+				<div
+					className={`flex justify-center items-center min-h-screen ${
+						isDarkMode ? "bg-black" : "bg-white"
+					}`}
+				>
+					<HashLoader color={isDarkMode ? "#C0A062" : "#000000"} />
+				</div>
+			) : (
+				<div className={`bg-${theme.bg} min-h-screen relative overflow-hidden`}>
+					{" "}
+					<ContactForm />
+				</div>
+			)}
+		</div>
+	);
 };
 
 export default Contact;

@@ -30,7 +30,7 @@ export default function WorkComponent({ name, link, intro, concept, image }) {
 					</p>
 					<Link to={link} target="_blank">
 						<button
-							className={`text-${theme.text} uppercase border border-brown px-5 py-2  mt-5 leading-[1] font-normal text-[16px]`}
+							className={`text-${theme.text} uppercase border border-brown px-5 py-6  mt-5 leading-[1] font-normal text-[16px]`}
 						>
 							{" "}
 							View Project

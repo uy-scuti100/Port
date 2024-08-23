@@ -62,6 +62,7 @@ html {
 /* works pages css */
 .work-header {
 	font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
+	line-height: 200%;
 }
 
 .work-title {
@@ -69,7 +70,7 @@ html {
 }
 
 .about-title {
-	font-size: calc(29px + 55 * ((100vw - 320px) / 1360));
+	font-size: calc(20px + 55 * ((100vw - 320px) / 1360));
 	line-height: 1;
 }
 
