@@ -2,21 +2,21 @@ import { ImInstagram } from "react-icons/im";
 import { FaTwitter } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 import { TiSocialLinkedin } from "react-icons/ti";
-import { ThemeContext } from "../../../context/theme";
+
 import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { ThemeContext } from "../../../context/theme";
 
 const HeroSection = () => {
 	const { theme, isDarkMode } = useContext(ThemeContext);
 
 	return (
-		<div className="max-w-[1680px]">
-			{/* {" animation"} */}
+		<div>
 			<div
 				className={`text-${theme.text} pt-[80px] pb-[40px] px-[20px] md:px-[100px] md:py-[80px]`}
 			>
 				{" "}
-				<SectionList theme={theme} isDarkMode={isDarkMode} />
+				<SectionList isDarkMode={isDarkMode} />
 			</div>
 			<div
 				className={`${
@@ -56,31 +56,38 @@ const HeroSection = () => {
 
 export default HeroSection;
 
+// freelance web designer & webflow developer
 const sections = [
 	{
-		title: "Web Design,",
+		title: "Freelance web ,",
 		overlayClass: "overlay-2",
 	},
 	{
-		title: "Development,",
+		title: "Designer and  Web,",
 		overlayClass: "overlay-3",
 	},
 	{
-		title: "Copywriting.",
+		title: "Developer.",
 		overlayClass: "overlay-2",
 	},
 ];
-const SectionList = ({ theme, isDarkMode }) => {
+const SectionList = ({ isDarkMode }) => {
 	return (
 		<>
-			{sections.map((section, index) => (
-				<div key={index} className="pb-2 div">
-					<h1 className={`${isDarkMode ? "darkshadow" : "lightshadow"} word `}>
-						{section.title}
-					</h1>
-					{/* <p className={`bg-${theme.load} ${section.overlayClass}`}></p> */}
-				</div>
-			))}
+			{/* {sections.map((section, index) => ( */}
+			<div className="pb-2 div">
+				<h1
+					className={`${
+						isDarkMode ? "darkshadow" : "lightshadow"
+					} word capitalize font-black relative`}
+				>
+					{/* freelance web designer & web developer */}
+					Freelance web designer specializing in both code and no-code
+					solutions.
+				</h1>
+				{/* <p className={`bg-${theme.load} ${section.overlayClass}`}></p> */}
+			</div>
+			{/* ))} */}
 		</>
 	);
 };

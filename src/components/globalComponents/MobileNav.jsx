@@ -1,15 +1,15 @@
 import { IoCloseOutline } from "react-icons/io5";
-import React, { useState, useRef, useEffect } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import React, { useState, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ThemeContext } from "../../../context/theme";
 import { useContext } from "react";
 import Grip from "./Grip";
 import { links } from "../../constants/topLinks";
 import { BsToggleOn } from "react-icons/bs";
+import { useGsap } from "../../lib/util";
 
 export default function MobileNav() {
+	const { useGSAP, gsap } = useGsap();
 	const { theme, isDarkMode, toggleTheme } = useContext(ThemeContext);
 	const [openNav, setOpenNav] = useState(false);
 	const navRef = useRef();

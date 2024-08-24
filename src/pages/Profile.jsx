@@ -13,7 +13,7 @@ import VisionAndQualities from "../components/ProfileComponents/VisionAndQualiti
 const Profile = () => {
 	const { theme, isDarkMode } = useContext(ThemeContext);
 	return (
-		<div className="py-[80px] px-5 md:px-[10px] ">
+		<div className="py-[80px] px-5 md:px-[10px]">
 			<InitialIntroduction />
 			<GetToKnowMe />
 			<VisionAndQualities />

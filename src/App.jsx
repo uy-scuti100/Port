@@ -13,10 +13,13 @@ import Profile from "./pages/Profile";
 import LenisComponent from "./components/globalComponents/ReactLenis";
 import MobileTopBar from "./components/globalComponents/MobileTopBar";
 import Footer from "./components/globalComponents/Footer";
+import useLenis from "./components/globalComponents/Lenis";
+import Lenis from "./components/globalComponents/Lenis";
+import SmoothScrolling from "./components/globalComponents/Lenis";
 
 const Layout = () => {
 	return (
-		<main className="relative w-full max-w-6xl min-h-screen mx-auto">
+		<div>
 			<Noise />
 			<Preloader />
 			<div className="hidden md:flex">
@@ -28,7 +31,7 @@ const Layout = () => {
 			<Outlet />
 			<MobileNav />
 			<Footer />
-		</main>
+		</div>
 	);
 };
 
@@ -55,14 +58,15 @@ const router = createBrowserRouter([
 		],
 	},
 ]);
+
 export default function App() {
 	const { isDarkMode } = useContext(ThemeContext);
 	isDarkMode;
 	return (
-		<main className={`${isDarkMode ? "bg-black" : "bg-white"}`}>
-			<LenisComponent>
+		<main className={`${isDarkMode ? "bg-black" : "bg-white"} `}>
+			<div className="relative w-full max-w-6xl min-h-screen mx-auto overflow-x-hidden">
 				<RouterProvider router={router} />
-			</LenisComponent>
+			</div>
 		</main>
 	);
 }
