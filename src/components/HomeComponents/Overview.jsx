@@ -1,7 +1,8 @@
 import { useContext, useState } from "react";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import { Link } from "react-router-dom";
-import { links } from "../constants/ProjectLinks";
+import { links } from "../../constants/ProjectLinks";
+import PrimaryBtn from "../buttons/primary-btn";
 
 const Overview = () => {
 	const { theme, isDarkMode } = useContext(ThemeContext);
@@ -16,7 +17,7 @@ const Overview = () => {
 				</h1>
 			</div>
 
-			<div className="flex flex-wrap items-center justify-center">
+			<div className="grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3">
 				{links.map((link) => {
 					// destrucre the content of each link
 					const { label, href, year, concept, type } = link;
@@ -28,7 +29,7 @@ const Overview = () => {
 									className={`text-${theme.text} ${
 										isDarkMode ? "bg-[#000000]" : "bg-[#ece5e5]"
 									}
-                  } h-[337px] w-[363px] py-5 px-10 m-4 relative overflow-hidden transition-all duration-500 ease-in-out `}
+                  } h-[337px] min-w-[363px] py-5 px-10 m-4 relative overflow-hidden transition-all duration-500 ease-in-out `}
 								>
 									<p
 										className={`capitalize text-[24px] py-10 relative after:absolute after:content-[""] after:bottom-0 after:left-0 after:bg-brown after:w-[10%] after:h-[1px] mb-3`}
@@ -46,27 +47,16 @@ const Overview = () => {
 									<p className="leading-[1] font-bold tracking-[2px] text-[#333333] text-[13px] font-roboto py-1 pr-[15px] uppercase ">
 										{type}
 									</p>
+									<div className="rounded-full bg-[#484848]/50 w-[54px] h-[54px] absolute  right-3 bottom-6 "></div>
+									<div className="rounded-full bg-[#484848]/50 w-[192px] h-[192px] absolute right-[-120px] bottom-[-100px]"></div>
 								</li>
 							</Link>
-							<div className="absolute bottom-[100px] right-[80px]">
-								<div className="relative">
-									<div className="rounded-full bg-[#484848]/50 w-[54px] h-[54px] absolute "></div>
-									<div className="rounded-full bg-[#484848]/50 w-[192px] h-[192px] absolute"></div>
-								</div>
-							</div>
 						</ul>
 					);
 				})}
 			</div>
 			<div className="flex items-center justify-center pt-20 pb-10">
-				<Link to="/work">
-					<button
-						className={`text-${theme.text} uppercase bg-brown px-5 py-6 leading-[1] font-normal text-[16px]`}
-					>
-						{" "}
-						view other projects
-					</button>
-				</Link>
+				<PrimaryBtn children={"view other projects"} href={"/work"} />
 			</div>
 			<div>
 				{isDarkMode ? (

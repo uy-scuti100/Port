@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/theme";
-import { textVariant, staggerContainer } from "../utils/motion";
+import { ThemeContext } from "../../../context/theme";
+import { textVariant, staggerContainer } from "../../utils/motion";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -18,29 +18,40 @@ const AboutMe = () => {
 				variants={textVariant(0.2)}
 				className={`${
 					isDarkMode ? "text-[#8d8d8dee]" : "text-[#4A4B65]"
-				}  p-[20px] md:p-[100px] about font-medium leading-[2] md:hidden text-[18px]`}
+				} p-[20px] md:p-[100px] about font-medium leading-[2] md:hidden text-xl`}
 			>
 				Hello! I’m &nbsp;
-				<strong className={`text-${theme.text}`}>Hussain Yusuf.</strong>
-				&nbsp; a web developer specializing in creating high-impact online
-				experiences.I blend exceptional web design and development with
-				persuasive copywriting to build websites that not only look stunning but
-				also drive results.Let's collaborate to create a digital platform that
-				captivates your audience and propels your business forward.
+				<strong className={`text-${theme.text}`}>Hussain Yusuf.</strong> I am a
+				web designer & developer helping startups and established businesses
+				that want to create a new and fresh online presence so they can continue
+				to grow, achieve business goals and drive conversions.
 			</motion.p>
 			<motion.div
 				variants={textVariant(0.2)}
 				className={`${
 					isDarkMode ? "text-[#8d8d8dee]" : "text-[#4A4B65]"
-				} hidden md:block  md:p-[50px] text-[18px] about font-medium leading-[1.8] md:ml-28`}
+				} hidden md:block md:p-[50px] sm:text-2xl md:text-2xl about font-medium md:ml-28 max-w-5xl  `}
 			>
+				{/* <p className="pb-3">
+					Hello! I’m &nbsp;
+					<strong className={`text-${theme.text}`}>Hussain Yusuf.</strong>
+					&nbsp; a web developer specializing in creating high-impact online
+					experiences.{" "}
+				</p>
+				<p className="pb-3">
+					I blend exceptional web design and development with persuasive
+					copywriting to build websites that not only look stunning but also
+					drive results.
+				</p>
+				<p>
+					Let's collaborate to create a digital platform that captivates your
+					audience and propels your business forward.
+				</p> */}
 				Hello! I’m &nbsp;
-				<strong className={`text-${theme.text}`}>Hussain Yusuf.</strong>
-				&nbsp; a web developer specializing in creating high-impact online
-				experiences.I blend exceptional web design and development with
-				persuasive copywriting to build websites that not only look stunning but
-				also drive results.Let's collaborate to create a digital platform that
-				captivates your audience and propels your business forward.
+				<strong className={`text-${theme.text}`}>Hussain Yusuf.</strong> I am a
+				web designer & developer helping startups and established businesses
+				that want to create a new and fresh online presence so they can continue
+				to grow, achieve business goals and drive conversions.
 			</motion.div>
 			<div
 				className={`${

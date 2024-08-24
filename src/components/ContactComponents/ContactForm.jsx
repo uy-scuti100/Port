@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillTwitterCircle } from "react-icons/ai";

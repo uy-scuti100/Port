@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import WorkComponent from "./WorkComponent";
-import { workLinks } from "../constants/WorkLinks";
+import { workLinks } from "../../constants/WorkLinks";
 
 const Works = () => {
 	const { theme, isDarkMode } = useContext(ThemeContext);

@@ -3,12 +3,8 @@
 @tailwind utilities;
 
 * {
-	font-family: Inter, Georgia, "Times New Roman", Times, serif;
+	font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
 }
-
-/* * {
-  font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
-} */
 
 .droid {
 	font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
@@ -21,6 +17,7 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	font-size: 18px;
 }
 
 .proj-title {
@@ -35,27 +32,27 @@ html {
 
 /* theme switch color transition */
 .bg-white {
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 
 .bg-black {
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 
 .bg-brown {
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: al1 0.5s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+	transition: al1 0.6s ease-in-out;
 }
 
 .bg-ash {
-	-webkit-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 
 .bg-whiter {
-	-webkit-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.6s ease-in-out;
 	transition: a1l 0.5s ease-in-out;
 }
 
@@ -71,7 +68,7 @@ html {
 
 .about-title {
 	font-size: calc(20px + 55 * ((100vw - 320px) / 1360));
-	line-height: 1;
+	/* line-height: 1; */
 }
 
 /* animations for homepage */
@@ -100,25 +97,24 @@ html {
 .num {
 	text-transform: capitalize;
 	opacity: 0;
-	animation: dis 0.5s ease-in 1.2s;
+	/* animation: dis 0.5s ease-in 1.2s; */
 	letter-spacing: calc(-1px + -10 * (100vw - 320px) / 1080);
 	line-height: 1.2;
 	font-family: Droid serif, Georgia, "Times New Roman", Times, serif;
-	animation-fill-mode: forwards;
+	/* animation-fill-mode: forwards; */
 }
 
 .div {
 	position: relative;
-	/* margin: 10px; */
 }
 
-.overlay-1 {
+/* .overlay-1 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 300px;
 	height: 100%;
-	animation: dismiss 1.5s linear;
+	animation: dismiss 2s 1.5s linear;
 	transform: translateX(-200%);
 }
 
@@ -128,7 +124,7 @@ html {
 	left: 0;
 	width: 500px;
 	height: 100%;
-	animation: dismiss-2 1.5s ease;
+	animation: dismiss-2 2s 1.5s ease;
 	transform: translateX(-200%);
 }
 
@@ -138,10 +134,10 @@ html {
 	left: 0;
 	width: 400px;
 	height: 100%;
-	animation: dismiss-3 1.5s ease;
+	animation: dismiss-3 2s 1.5s ease;
 	transform: translateX(-200%);
-}
-
+} */
+/* 
 @keyframes dis {
 	0% {
 		transform: translateX(0px);
@@ -239,4 +235,4 @@ html {
 		width: 350px;
 		opacity: 0;
 	}
-}
+} */

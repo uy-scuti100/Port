@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import { useContext } from "react";
+import SecondaryBtn from "../buttons/secondary-btn";
 
 export default function WorkComponent({ name, link, intro, concept, image }) {
 	const { theme, isDarkMode } = useContext(ThemeContext);
@@ -29,12 +30,7 @@ export default function WorkComponent({ name, link, intro, concept, image }) {
 						{intro}
 					</p>
 					<Link to={link} target="_blank">
-						<button
-							className={`text-${theme.text} uppercase border border-brown px-5 py-6  mt-5 leading-[1] font-normal text-[16px]`}
-						>
-							{" "}
-							View Project
-						</button>
+						<SecondaryBtn children={"View Project"} />
 					</Link>
 				</div>
 			</div>

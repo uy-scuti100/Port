@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import { Link } from "react-router-dom";
 import { ImInstagram } from "react-icons/im";
 import { FaTwitter } from "react-icons/fa";

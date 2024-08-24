@@ -1,8 +1,8 @@
 import { BsToggleOn } from "react-icons/bs";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-import { navVariants } from "../utils/motion";
+import { navVariants } from "../../utils/motion";
 import { Link } from "react-router-dom";
 
 const MobileTopBar = () => {
@@ -12,10 +12,10 @@ const MobileTopBar = () => {
 			variants={navVariants}
 			initial="hidden"
 			whileInView="show"
-			className=" flex md:hidden max-w-[1680px] items-center justify-between"
+			className="flex md:hidden max-w-[1680px] items-center justify-between"
 		>
 			<Link to="/">
-				<div className="bg-brown w-[60px] h-[60px] text-black flex items-center justify-center font-[roboto] text-[18px] font-bold mr-8">
+				<div className="bg-brown w-[60px] h-[60px] text-black flex items-center justify-center font-[roboto] text-[18px] font-bold mr-8 ">
 					HY
 				</div>
 			</Link>

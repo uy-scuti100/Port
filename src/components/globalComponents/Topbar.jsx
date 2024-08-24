@@ -1,10 +1,10 @@
 import { BsToggleOn } from "react-icons/bs";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import { useContext } from "react";
 import { motion } from "framer-motion";
-import { navVariants } from "../utils/motion";
+import { navVariants } from "../../utils/motion";
 import { Link } from "react-router-dom";
-import { desktopLinks, links } from "../constants/topLinks";
+import { desktopLinks, links } from "../../constants/topLinks";
 const Topbar = () => {
 	const { theme, isDarkMode, toggleTheme } = useContext(ThemeContext);
 
@@ -14,7 +14,7 @@ const Topbar = () => {
 			variants={navVariants}
 			initial="hidden"
 			whileInView="show"
-			className="items-center justify-between hidden w-full p-10 md:flex "
+			className="items-center justify-between hidden w-full px-5 pt-10 md:flex "
 		>
 			<Link to="/">
 				<div className="flex items-center gap-5">

@@ -3,13 +3,14 @@ import React, { useState, useRef, useEffect } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Link, useLocation } from "react-router-dom";
-import { ThemeContext } from "../../context/theme";
+import { ThemeContext } from "../../../context/theme";
 import { useContext } from "react";
 import Grip from "./Grip";
-import { links } from "../constants/topLinks";
+import { links } from "../../constants/topLinks";
+import { BsToggleOn } from "react-icons/bs";
 
 export default function MobileNav() {
-	const { theme } = useContext(ThemeContext);
+	const { theme, isDarkMode, toggleTheme } = useContext(ThemeContext);
 	const [openNav, setOpenNav] = useState(false);
 	const navRef = useRef();
 	const tl = useRef();
@@ -93,8 +94,20 @@ export default function MobileNav() {
 				className={`backdrop-blur-2xl  fixed overflow-hidden inset-0 pointer-events-none`}
 				style={{ clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)" }}
 			>
+				<div className="flex justify-end">
+					<div className="m-3 text-white cursor-pointer" onClick={toggleTheme}>
+						{isDarkMode ? (
+							<BsToggleOn
+								size={36}
+								style={{ color: "#fff", rotate: "180deg" }}
+							/>
+						) : (
+							<BsToggleOn size={36} style={{ color: "#000" }} />
+						)}
+					</div>
+				</div>
 				<ul
-					className={`text-${theme.text}absolute z-40 flex flex-col gap-12 bottom-32 left-5 group `}
+					className={`text-${theme.text} absolute z-40 flex flex-col gap-12 bottom-32 left-5 group `}
 				>
 					{links.map((link, index) => {
 						const { label, href } = link;
@@ -118,14 +131,14 @@ export default function MobileNav() {
 				<div className={`text-${theme.text} absolute left-5 bottom-6`}>
 					<div className="flex items-center gap-4 text-sm font-bold md:text-xl justify-items-end">
 						<Link
-							href={"https://www.instagram.com/uy___scuti/"}
+							to={"https://www.instagram.com/uy___scuti"}
 							target="_blank"
 							className="uppercase socials "
 						>
 							Instagram
 						</Link>
 						<Link
-							href={"https://x.com/Hussain_Joe"}
+							to={"https://x.com/Hussain_Joe"}
 							target="_blank"
 							className="uppercase socials "
 						>
@@ -134,7 +147,7 @@ export default function MobileNav() {
 
 						<Link
 							className="uppercase socials"
-							href={"https://github.com/uy-scuti100"}
+							to={"https://github.com/uy-scuti100"}
 							target="_blank"
 						>
 							Github
