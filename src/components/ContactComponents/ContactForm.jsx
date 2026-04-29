@@ -8,25 +8,25 @@ import { Link } from "react-router-dom";
 const socials = [
     {
         label: "X / Twitter",
-        handle: "@hussain_joe",
+        handle: "ㄩㄚ 丂匚ㄩㄒ丨",
         href: "https://x.com/hussain_joe",
         icon: FaTwitter,
     },
     {
         label: "LinkedIn",
-        handle: "in/uy-scuti",
+        handle: "Hussain Babatunde",
         href: "https://www.linkedin.com/in/uy-scuti/",
         icon: AiFillGithub,
     },
     {
         label: "GitHub",
-        handle: "uy-scuti100",
+        handle: "Hussain Yusuf",
         href: "https://github.com/uy-scuti100",
         icon: AiFillGithub,
     },
     {
         label: "Bluesky",
-        handle: "scuti-dr3.bsky.social",
+        handle: "ㄩㄚ 丂匚ㄩㄒ丨",
         href: "https://bsky.app/profile/scuti-dr3.bsky.social",
         icon: AiFillGithub,
     },

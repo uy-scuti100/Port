@@ -106,7 +106,7 @@ const Footer = () => {
 				</p>
 
 				<p>
-					<Link to="https://www.linkedin.com/in/yusuf-hussain-276ab6251/">
+					<Link to="https://www.linkedin.com/in/uy-scuti/">
 						<TiSocialLinkedin />
 					</Link>
 				</p>

@@ -7,7 +7,6 @@ export default function PrimaryBtn({ children, href }) {
 	return (
 		<Link
 			to={href}
-			target="_blank"
 			className={`text-${theme.text} uppercase bg-brown transition-all duration-500 hover:opacity-70 md:px-5 md:py-6 py-4 px-3 leading-[1] whitespace-nowrap`}
 		>
 			{children}

@@ -1,10 +1,17 @@
 export const workLinks = [
     {
         name: "VybeSec",
-        link: "https://vybesec.vercel.app/",
+        link: "https://vybesec.com/",
         intro: "App monitoring built for non-engineers. VybeSec watches every crash, leak, and slowdown in your AI-built app and translates the raw error into plain English — with a fix prompt ready to paste into Cursor, Lovable, or Replit. Built with Next.js, TypeScript, and a real-time error pipeline.",
         image: "https://api.microlink.io/?url=https://vybesec.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
         concept: "Developer Tools",
+    },
+       {
+        name: "Chat Manager for Claude",
+        link: "https://ccm-eosin.vercel.app/",
+        intro: "A Chrome extension that adds folders, tags, a saved prompt library, usage stats, and export to claude.ai — without touching a single line of Claude's code. No chat content stored. Works across all Chromium-based browsers. Free tier covers most power users.",
+        image: "https://api.microlink.io/?url=https://ccm-eosin.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
+        concept: "Chrome Extension",
     },
     {
         name: "Furl",
@@ -20,11 +27,5 @@ export const workLinks = [
         image: "https://api.microlink.io/?url=https://orderground.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
         concept: "Commerce",
     },
-    {
-        name: "Chat Manager",
-        link: "https://ccm-eosin.vercel.app/",
-        intro: "A Chrome extension that adds folders, tags, a saved prompt library, usage stats, and export to claude.ai — without touching a single line of Claude's code. No chat content stored. Works across all Chromium-based browsers. Free tier covers most power users.",
-        image: "https://api.microlink.io/?url=https://ccm-eosin.vercel.app&screenshot=true&meta=false&embed=screenshot.url",
-        concept: "Chrome Extension",
-    },
+ 
 ];

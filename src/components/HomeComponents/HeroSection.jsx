@@ -47,7 +47,7 @@ const HeroSection = () => {
                 <p>
                     <Link
                         target="_blank"
-                        to="https://www.linkedin.com/in/yusuf-hussain-276ab6251/"
+                        to="https://www.linkedin.com/in/uy-scuti"
                     >
                         <TiSocialLinkedin className="text-[#8d8d8dee]" />
                     </Link>
